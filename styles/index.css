@@ -1,46 +1,150 @@
 /*清除元素默认的内外边距  */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  /*让所有斜体 不倾斜*/
-  em,
-  i {
-    font-style: normal;
-  }
-  /*去掉列表前面的小点*/
-  li {
-    list-style: none;
-  }
-  /*图片没有边框   去掉图片底侧的空白缝隙*/
-  img {
-    border: 0; /*ie6*/
-    vertical-align: middle;
-  }
-  /*让button 按钮 变成小手*/
-  button {
-    cursor: pointer;
-  }
-  /*取消链接的下划线*/
-  a {
-    color: #666;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #e33333;
-  }
-  body {
-    background: url(/imges/bg.jpg) no-repeat 0 0 / cover;
-    /* background-size: cover; */
-  }
-  .viewport {
-    display: flex;
-    min-width: 1024px;
-    max-width: 1920px;
-    margin: 0 auto;
-    padding: 1.1rem 0.25rem 0;
-    background: url(../images/logo.png) no-repeat 0 0 / contain;
-    min-height: 780px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*让所有斜体 不倾斜*/
+em,
+i {
+  font-style: normal;
+}
+/*去掉列表前面的小点*/
+li {
+  list-style: none;
+}
+/*图片没有边框   去掉图片底侧的空白缝隙*/
+img {
+  border: 0; /*ie6*/
+  vertical-align: middle;
+}
+/*让button 按钮 变成小手*/
+button {
+  cursor: pointer;
+}
+/*取消链接的下划线*/
+a {
+  color: #666;
+  text-decoration: none;
+}
+.main-nav{
+  height: 90px;
+        font-size: 24px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        text-align: center;
+        background: url(../imges/navbg.png) center/cover no-repeat;
+        background-color: rgba(11, 67, 124, 0.3);
+        box-shadow: 0px 0px 2px 1px #abcdef
+}
+.header-bg {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 35vw;
+  height: 90px;
+  background: url(../imges/headbg1.png) center no-repeat;
+  background-size: 100% 100%;
+}
+
+.hearder-bg img{
+  position: absolute;
+  height: 42px;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header-title{
+  margin-left: 3.5vw;
+  line-height: 90px;
+  font-family: 'HuXiaoBo-NanShen';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  background: linear-gradient(180deg, #ffffff 0%, #5be9db 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.nav-list{
+  position: absolute;
+   width: 100%; 
+   height: 100%
+}
+.main-nav-item{
+  color: rgba(255, 255, 255, 0.6);
+  width: 148px;
+  height: 60px;
+  margin: 23px auto;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+.main-nav-item-selected {
+  color: #ffffff;
+  background: url(../imges/navitembg.png) 100% 100% no-repeat;
+}
+.main-nav-item:hover {
+  color: #ffffff;
+  /* background: #04335f; */
+}
+.main-nav-item:hover ul {
+  display: inline;
+}
+
+.main-nav-title {
+  height: 60px;
+  line-height: 44px;
+}
+
+.main-dropdown-ul {
+  /*border-radius: 6px;*/
+  left: 0px;
+  top: 60px;
+  width: 148px;
+  overflow: hidden;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+.main-dropdown-ul li:hover {
+  color: #ffffff;
+  background: #042441;
+}
+
+.main-dropdown-li {
+  color: #f0f0f0;
+  background: #04335f;
+  padding: 0px 10px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+#btn_manage{
+  position: absolute;
+          right: 30px;
+          top: 50%;
+          transform: translateY(-50%);
+          font-family: 'OPPOSans';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 24px;
+          color: #14dad6;
+          cursor: pointer;
+}
+#btn_manage img{
+  width: 1em;
+   height: 1em; 
+   vertical-align: -0.15em
 }

@@ -2,19 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>数据看板展示</title>
-    <link rel="stylesheet" href="/styles/index.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <script src="../js/echarts.min.js"></script>
+    <script src="../js/flexible.js"></script>
+    <script src="../js/jquery.min.js"></script>
 </head>
 <body>
-    <!-- 顶栏 -->
-    <div class="viewport">
-        <span>首页</span>
-        <span>设备管理</span>
-        <span>巡检配置</span>
+    <div class="main-nav">
+        <div class="header-bg">
+            <img src="../imges/endurance-white.png" alt="">
+            <span class="header-title">机坪供油地井运输管线系统</span>
+        </div>
+        <div class="nav-list">
+            <div id="nav_Home"class="main-nav-item main-nav-item-selected" style="margin-left: 14vw;">
+                <span class="main-nav-title">首页</span>
+            </div>
+            <div id="nav_Equipment" class="main-nav-item">
+                <span class="main-nav-title">设备管理
+                    <ul class="main-dropdown-ul">
+                        <li class="main-dropdown-li">设备台账</li>
+                        <li class="main-dropdown-li">设备分布</li>
+                        <li class="main-dropdown-li">设备模板</li>
+                    </ul>
+                </span>
+            </div>
+            <div id="nav_Configure" class="main-nav-item">
+                <span class="main-nav-title ">巡检配置
+                    <ul class="main-dropdown-ul">
+                        <li class="main-dropdown-li">保养配置</li>
+                        <li class="main-dropdown-li">巡检记录</li>
+                    </ul>
+                </span>
+            </div>
+            <div id="nav_Knowledge" class="main-nav-item">
+                <span class="main-nav-title ">知识库
+                    <ul class="main-dropdown-ul">
+                        <li class="main-dropdown-li">常见故障</li>
+                        <li class="main-dropdown-li">术语定义</li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+        <!-- 管理页面 -->
+        <!-- <div class="header-line"></div> -->
+        <span id="btn_manage">
+            <img src="../imges/tomanageicon.png" alt="">
+            管理页面
+        </span>
     </div>
-    <!-- 左侧数据展示区 -->
-    <!-- 中间地图区域 -->
-    <!-- 右侧数据展示区 -->
 </body>
 </html>
